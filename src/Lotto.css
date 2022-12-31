@@ -1,18 +1,24 @@
 body {
-  background-image: url(image/Lotto_image.jpg);
+  background-image: url(../image/Lotto_image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
 }
 .title {
-  text-align: center;
   margin-top: 40px;
   color: blanchedalmond;
   font-size: 40px;
 }
 
+.main {
+  display: inline-block;
+  padding: 120px 40px;
+  margin-top: 30px;
+  border-radius: 10px;
+  border: 3px solid bisque;
+}
 .lottery {
   text-align: center;
-  margin-top: 70px;
 }
 
 .lotteryButton {
