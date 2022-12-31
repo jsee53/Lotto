@@ -1,10 +1,43 @@
+body {
+  background-image: url(image/Lotto_image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .title {
   text-align: center;
   margin-top: 40px;
   color: blanchedalmond;
+  font-size: 40px;
 }
 
 .lottery {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 70px;
+}
+
+.lotteryButton {
+  background-color: bisque;
+  border-radius: 10px;
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  padding: 10px 30px;
+  text-align: center;
+  font-size: 20px;
+  box-shadow: 7px 7px 7px black;
+  transition-duration: 0.3s;
+}
+
+.lotteryButton:hover {
+  cursor: pointer;
+  background-color: aliceblue;
+}
+
+.lotteryButton:active {
+  box-shadow: none;
+}
+
+.number {
+  margin-top: 90px;
+  color: white;
 }
