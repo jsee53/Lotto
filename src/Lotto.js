@@ -7,11 +7,12 @@ function lottery() {
     while (!duplicationCheck(number)) {
       number = Math.floor(Math.random() * 45) + 1;
     }
+    lottoNumber[i] = number;
     sleep();
     console.log(number);
   }
   const numberText = document.getElementById("number");
-  numberText.innerHTML = "<div>text</div>";
+  numberText.innerHTML = "<div>number</div>";
 }
 
 //1초 딜레이 하는 함수
@@ -25,12 +26,10 @@ function sleep() {
 
 //랜덤 생성한 번호의 중복을 확인하는 함수
 function duplicationCheck(num) {
-  console.log(lottoNumber.length);
   for (var i = 0; i < lottoNumber.length; i++) {
     if (lottoNumber[i] == num) {
       return false;
     }
-    console.log("text: " + lottoNumber[i]);
   }
   return true;
 }
