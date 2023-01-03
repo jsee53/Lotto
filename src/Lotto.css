@@ -21,11 +21,13 @@ a:hover {
 
 .main {
   display: inline-block;
-  padding: 120px 40px;
-  margin-top: 30px;
+  text-align: center;
+  margin-top: 80px;
+  padding: 10px;
   border-radius: 10px;
   border: 3px solid bisque;
 }
+
 .lottery {
   text-align: center;
 }
@@ -53,12 +55,17 @@ a:hover {
   cursor: default;
 }
 
-.number {
+.numberTable {
   margin-top: 40px;
-  display: flex;
+  width: 370px;
+  border-spacing: 10px;
+  border-collapse: separate;
+}
+
+td {
   color: white;
+  font-weight: bold;
   text-align: center;
-  background-color: aquamarine;
   width: 50px;
   height: 50px;
   border-radius: 25px;

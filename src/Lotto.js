@@ -9,12 +9,14 @@ function lottery() {
       number = Math.floor(Math.random() * 45) + 1;
     }
     lottoNumber[i] = number;
-    sleep();
+    // sleep();
 
     var tr = trList[0];
-    var tdList = trList.getElementsByTagName("td")[i];
+    var tdList = tr.getElementsByTagName("td")[i];
     tdList.innerText = lottoNumber[i];
-    console.log(number);
+    tdList.style.backgroundColor =
+      "#" + parseInt(Math.random() * 0xeeffff).toString(16);
+    tdList.style.border = "2px solid white";
   }
 }
 
