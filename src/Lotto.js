@@ -1,4 +1,5 @@
 var lottoNumber = [];
+var trList = document.getElementById("numberTable").getElementsByTagName("tr");
 
 function lottery() {
   var number;
@@ -9,10 +10,12 @@ function lottery() {
     }
     lottoNumber[i] = number;
     sleep();
+
+    var tr = trList[0];
+    var tdList = trList.getElementsByTagName("td")[i];
+    tdList.innerText = lottoNumber[i];
     console.log(number);
   }
-  const numberText = document.getElementById("number");
-  numberText.innerHTML = "<div>number</div>";
 }
 
 //1초 딜레이 하는 함수
